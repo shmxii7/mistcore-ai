@@ -1,0 +1,46 @@
+# =========================
+# MistCore AI - Git Ignore
+# =========================
+
+# Secrets / API keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python environments
+.venv/
+venv/
+env/
+runtime/piper-env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local databases / user data
+*.db
+*.sqlite
+*.sqlite3
+database/uploads/
+uploads/
+
+# Logs
+*.log
+logs/
+
+# Local AI model files
+runtime/voices/*.onnx
+runtime/voices/*.onnx.json
+
+# macOS / Windows junk
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
